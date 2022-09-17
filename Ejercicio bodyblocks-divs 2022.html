@@ -28,20 +28,22 @@
         }
         nav{
             margin: auto;
-            margin-top: 10px;
+            margin-top: 5px;
             width: 960px;
             height: 40px;
             background: greenyellow;
+            text-align: center;
         }
         #lateral {
-            width: 300px;
-            height: 500px;
+            width: 250px;
+            height: 400px;
             background-color: green;
             float: right;
+            text-align: left;
         }
         .seccion1 {
             width: 640px;
-            height: 200px;
+            height: 400px;
             background-color: blue;
         }
         .seccion2 {
@@ -50,10 +52,20 @@
             height: 200px;
             background-color: purple;
         }
+        article {
+            background-color: aqua;
+            padding-top: 10px;
+            padding: 5px;
+        }
+        footer{
+            text-align: center;
+            color: aliceblue;
+            background-color: black;
+        }
     </style>
 </head>
 
-<! Ejercicio con secciones de pagina, div y estilos incrustados en bloque>
+<!-- Ejercicio con secciones de pagina, div y estilos incrustados en bloque -->
 
 <body>
     <head>
@@ -61,12 +73,37 @@
             <h1>Blog sobre programación de videojuegos</h1>
         </div>
     </head>
-    <nav id="navegacion">
-
+    <nav>
+        <h3>Inicio
+        Tutoriales
+        Ejemplos
+        Demos
+        Comprar </h3>
     </nav>
-    <section id="section1">
+    
+    <aside id="lateral">
+        <div style="padding: 25px;">
+            <h3>Franja de noticias</h3>
+            <br/>
+            <ul>
+                <li>Unity</li>
+                <li>UnrealEngine</li>
+            </ul>
+        </div>
+    </aside>
 
+    <section class="seccion1">
+        <article>
+            <h2>Nueva actualización del motor</h2>
+            <br/>
+            <p>
+                Nuevas prestaciones del motor de juegos para raytracing incorporado.
+            </p>
+        </article>
     </section>
-</body>
 
+    <footer>
+        Derechos reservados de Alvaro Muñoz, @copyright 2022
+    </footer>
+</body>
 </html>
