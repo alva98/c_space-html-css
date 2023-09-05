@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: beige;
+}
+.css-l316jd {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+}
